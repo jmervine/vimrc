@@ -117,8 +117,9 @@
 
         if has('gui_running')
           " gvim and macvim configs here
-          set shell=zsh
+          set shell=bash
           set guioptions-=T
+
           if has("gui_gtk2")
               set guifont=Andale\ Mono\ Regular\ 11,Menlo\ Regular\ 10,Consolas\ Regular\ 11,Courier\ New\ Regular\ 13
           endif

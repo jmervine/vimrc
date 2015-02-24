@@ -84,8 +84,6 @@ call vundle#end()
 " Configuration {
 
     " nerdtree {
-        let g:NERDShutUp=1
-
         nm <C-N> :NERDTreeToggle<CR>
         map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
         map <leader>e :NERDTreeFind<CR>
@@ -100,6 +98,11 @@ call vundle#end()
         let NERDTreeShowHidden=0
         let NERDTreeKeepTreeInNewTab=1
         let g:nerdtree_tabs_open_on_gui_startup=0
+        let g:NERDShutUp=1
+
+        if v:version < 730
+            let g:NERDTreeDirArrows=0
+        endif
     " }
 
     " Buffer Explorer {

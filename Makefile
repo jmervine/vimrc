@@ -22,3 +22,6 @@ PluginInstall:
 clean:
 	mv -f $(HOME)/.vimrc $(HOME)/.vimrc.backup
 	rm -rf $(HOME)/.vim/bundle
+
+docker:
+	docker build -t 'jmervine/vimrc' .

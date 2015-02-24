@@ -5,13 +5,14 @@ This is my `vimrc`.
 ## Install
 
 ```
-git clone <this repo> $HOME/.vim
+git clone https://github.com/jmervine/vimrc.git  $HOME/.vim
 cd $HOME/.vim
 make
 ```
 
-## Notes:
 
-Things to consider changing if you're using this and not me:
+## Docker Usage
 
-* vimrc: `set shell=zsh` to `set shell=bash`
+```
+docker run --pull -v /path/to/files:/root/src --rm -it jmervine/vimrc
+```
