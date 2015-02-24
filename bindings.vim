@@ -56,7 +56,6 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
-
 " TODO: Review spf13 copy {
     " Easier moving in tabs and windows
     map <C-J> <C-W>j<C-W>_

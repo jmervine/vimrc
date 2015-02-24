@@ -8,8 +8,8 @@ call vundle#begin()
     " Deps
         " let Vundle manage Vundle, required
         Plugin 'gmarik/Vundle.vim'
-        Plugin 'MarcWeber/vim-addon-mw-utils'
-        Plugin 'tomtom/tlib_vim'
+        "Plugin 'MarcWeber/vim-addon-mw-utils'
+        "Plugin 'tomtom/tlib_vim'
 
         if executable('ack-grep')
             let g:ackprg="ack-grep -H --nocolor --nogroup --column"
@@ -22,7 +22,6 @@ call vundle#begin()
         Plugin 'vim-scripts/sudo.vim'
         Plugin 'spf13/vim-colors'
         Plugin 'matchit.zip'
-        Plugin 'Lokaltog/vim-easymotion'
         Plugin 'flazz/vim-colorschemes'
         Plugin 'bling/vim-airline'
 
@@ -214,6 +213,18 @@ call vundle#end()
         let b:match_ignorecase = 1
     " }
 
+    " CtrlP {
+        set wildignore+=*/tmp/*,*.so,*.swp,*.zip,=*,~=*     " MacOSX/Linux
+        let g:ctrlp_custom_ignore = {
+          \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+          \ 'file': '\v\.(exe|so|dll)$',
+          \ 'link': 'some_bad_symbolic_links',
+          \ }
+
+        let g:ctrlp_map = '<c-p>'
+        let g:ctrlp_cmd = 'CtrlP'
+        let g:ctrlp_working_path_mode = 'a'
+    " }
 
 " }
 

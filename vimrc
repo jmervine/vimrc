@@ -1,5 +1,4 @@
 " Largly built from spf13-vim (http://spf13.com)
-"
 
 " Environment {
     " Basics {
@@ -15,7 +14,7 @@
         " Immediately following Bundles include.
         filetype plugin indent on    " required
 
-        let mapleader = '/'
+        let mapleader = '\'
 
         if has ("unix") && "Darwin" != system("echo -n \"$(uname)\"")
           " on Linux use + register for copy-paste
@@ -136,7 +135,6 @@
 
           " enable mouse
           set mouse=a
-
 
           if has('gui_macvim')
             " macvim only configs here
