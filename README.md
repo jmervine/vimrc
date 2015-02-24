@@ -10,4 +10,8 @@ cd $HOME/.vim
 make
 ```
 
+## Notes:
 
+Things to consider changing if you're using this and not me:
+
+* vimrc: `set shell=zsh` to `set shell=bash`
