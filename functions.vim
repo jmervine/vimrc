@@ -88,3 +88,16 @@ function! NERDTreeInitAsNeeded()
         wincmd l
     endif
 endfunction
+
+" StartUp functions:
+function! StartUp()
+    if 0 == argc()
+        " sans files via cli
+        NERDTree
+    end
+
+    " all conditions
+
+endfunction
+autocmd VimEnter * call StartUp()
+
