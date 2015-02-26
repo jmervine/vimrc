@@ -73,7 +73,7 @@
 
         " disable autofolding
         set nofoldenable
-        set colorcolumn=80
+        silent! set colorcolumn=80 " ignore on error
         set tabpagemax=15               " only show 15 tabs
         set showmode                    " display the current mode
         set cursorline                  " highlight current line
