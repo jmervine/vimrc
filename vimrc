@@ -24,14 +24,6 @@
           set clipboard=unnamed
         endif
     " }
-
-    " Filetype Workarounds {
-        " Temporary workaround to Better-CSS-Syntax-for-Vim
-        " See https://github.com/ChrisYip/Better-CSS-Syntax-for-Vim/issues/9
-        " for more information
-        autocmd BufNewFile,BufRead *.scss set filetype=css
-        autocmd BufNewFile,BufRead *.sass set filetype=css
-    " }
 " }
 
 " Includes {
@@ -111,7 +103,6 @@
         set whichwrap=b,s,h,l,<,>,[,]   " backspace and cursor keys wrap to
         set scrolljump=5                " lines to scroll when cursor leaves screen
         set scrolloff=3                 " minimum lines to keep above and below cursor
-        set foldenable                  " auto fold code
         set list
         set listchars=tab:,.,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
 

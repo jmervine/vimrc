@@ -39,4 +39,11 @@ augroup myfiletypes
     autocmd FileType make set ai sw=4 sts=4 ts=4 noexpandtab
   " }
 
+  " Filetype Workarounds {
+      " Temporary workaround to Better-CSS-Syntax-for-Vim
+      " See https://github.com/ChrisYip/Better-CSS-Syntax-for-Vim/issues/9
+      " for more information
+      autocmd BufNewFile,BufRead *.scss set filetype=css
+      autocmd BufNewFile,BufRead *.sass set filetype=css
+  " }
 augroup END

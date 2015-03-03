@@ -10,17 +10,29 @@ imap <Leader>s <C-o>:setlocal spell! spelllang=en_gb<CR>
 nmap <Leader>s :setlocal spell! spelllang=en_gb<CR>
 
 " mouse mode
-nm <C-m> :set mouse=a <CR>
-nm <C-m-m> :set mouse=a <CR>
+"nm <C-m> :set mouse=a <CR>
+"nm <C-m-m> :set mouse=a <CR>
+
+" toggle line number
+:nmap <Leader>nn :set invnumber<CR>
 
 " enable / disable paste mode
 map <leader>p :se invpaste paste?<CR>
+
+" Easier moving in tabs and windows
+"map <C-J> <C-W>j<C-W>_
+"map <C-K> <C-W>k<C-W>_
+"map <C-L> <C-W>l<C-W>_
+"map <C-H> <C-W>h<C-W>_
 
 " Window mappings
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+map <Leader>- <C-W>_<C-W><Bar>
+map <Leader>_ <C-W>_<C-W><Bar>
 
 " Easier horizontal scrolling
 map zl zL
@@ -38,8 +50,8 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 
 " Shortcuts
 " Change Working Directory to that of the current file
-cmap cwd lcd %:p:h
-cmap cd. lcd %:p:h
+cmap cwd lcd %:p:h<CR>
+cmap cd. lcd %:p:h<CR>
 
 " visual shifting (does not exit Visual mode)
 vnoremap < <gv
@@ -57,11 +69,6 @@ map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
 " TODO: Review spf13 copy {
-    " Easier moving in tabs and windows
-    map <C-J> <C-W>j<C-W>_
-    map <C-K> <C-W>k<C-W>_
-    map <C-L> <C-W>l<C-W>_
-    map <C-H> <C-W>h<C-W>_
 
     " Stupid shift key fixes
     if has("user_commands")
