@@ -31,6 +31,7 @@ augroup myfiletypes
 
       " Golang
       autocmd FileType golang,go set ai sw=4 sts=4 et
+      autocmd FileType golang,go set nolist
   " }
 
   " Tab - tab=(Tab as 4xSpace) {
