@@ -4,6 +4,9 @@ install:
 	make bundle/Vundle.vim
 	make PluginInstall
 
+uninstall:
+	rm -f $(HOME)/.vimrc
+
 update:
 	git pull
 	make PluginInstall
