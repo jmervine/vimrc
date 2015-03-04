@@ -31,6 +31,7 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Window minimize
 map <Leader>- <C-W>_<C-W><Bar>
 map <Leader>_ <C-W>_<C-W><Bar>
 
@@ -59,6 +60,9 @@ vnoremap > >gv
 
 " For when you forget to sudo.. Really Write the file.
 cmap w!! w !sudo tee % >/dev/null
+
+" Run golang tests
+cmap got !go test -v
 
 " Some helpers to edit mode
 " http://vimcasts.org/e/14
