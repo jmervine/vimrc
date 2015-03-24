@@ -44,6 +44,9 @@ call vundle#begin()
     " Ansible
         Plugin 'chase/vim-ansible-yaml'
 
+    " Scala
+        Plugin 'derekwyatt/vim-scala'
+
     " Python
         Plugin 'klen/python-mode'
 
