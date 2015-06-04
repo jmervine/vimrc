@@ -54,6 +54,7 @@ call vundle#begin()
         Plugin 'davidhalter/jedi-vim'
 
     " Ruby
+        Plugin 'ngmy/vim-rubocop'
         Plugin 'sunaku/vim-ruby-minitest'
         Plugin 'tpope/vim-haml'
 
