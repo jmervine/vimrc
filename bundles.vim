@@ -151,16 +151,6 @@ call vundle#end()
         let g:pymode_lint_checker = "pyflakes"
     " }
 
-    " ctrlp {
-        let g:ctrlp_working_path_mode = 2
-        nnoremap <silent> <D-t> :CtrlP<CR>
-        nnoremap <silent> <D-r> :CtrlPMRU<CR>
-        let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\.git$\|\.hg$\|\.svn$',
-            \ 'file': '\.exe$\|\.so$\|\.dll$' }
-    "}
-
-
     " airline {
         let g:airline_theme='dark'
         "let g:airline_left_sep = ''
@@ -230,8 +220,7 @@ call vundle#end()
 
         let g:ctrlp_map = '<c-p>'
         let g:ctrlp_cmd = 'CtrlP'
-        let g:ctrlp_working_path_mode = 'a'
+        let g:ctrlp_working_path_mode = '0'
     " }
-
 " }
 
