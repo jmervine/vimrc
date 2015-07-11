@@ -1,8 +1,17 @@
 " Largly built from spf13-vim (http://spf13.com)
+"
+" Local - aka Overides{
+"   loading before and after everything, hence this existing in two places
+    if filereadable(expand("~/.vim/local.vim"))
+      source ~/.vim/local.vim
+    endif
+" }
 
 " Environment {
     " Basics {
         set nocompatible        " must be first line
+
+        let g:spf13_no_autochdir = 1
 
         " Bundles {
         "   " Bundles include must be second!
@@ -165,6 +174,9 @@
         " }
     " }
 
+    " turn off autochdir
+    set noautochdir
+
     " turn off spell checking by default
     set nospell
 
@@ -203,6 +215,7 @@
 
 " Local - aka Overides{
     if filereadable(expand("~/.vim/local.vim"))
+        let g:local_after = 1
         source ~/.vim/local.vim
     endif
 " }

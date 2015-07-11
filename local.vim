@@ -17,4 +17,4 @@ else
 endif
 
 " vim, gvim and macvim configs here.
-
+let g:without_python = 1

@@ -77,27 +77,27 @@ function! InitializeDirectories()
 endfunction
 call InitializeDirectories()
 
-function! NERDTreeInitAsNeeded()
-    redir => bufoutput
-    buffers!
-    redir END
-    let idx = stridx(bufoutput, "NERD_tree")
-    if idx > -1
-        NERDTreeMirror
-        NERDTreeFind
-        wincmd l
-    endif
-endfunction
+"function! NERDTreeInitAsNeeded()
+    "redir => bufoutput
+    "buffers!
+    "redir END
+    "let idx = stridx(bufoutput, "NERD_tree")
+    "if idx > -1
+        "NERDTreeMirror
+        "NERDTreeFind
+        "wincmd l
+    "endif
+"endfunction
 
 " StartUp functions:
-function! StartUp()
-    if 0 == argc()
-        " sans files via cli
-        NERDTree
-    end
-
-    " all conditions
-
-endfunction
-autocmd VimEnter * call StartUp()
+" function! StartUp()
+"     if 0 == argc()
+"         " sans files via cli
+"         "NERDTree
+"     end
+"
+"     " all conditions
+"
+" endfunction
+" autocmd VimEnter * call StartUp()
 

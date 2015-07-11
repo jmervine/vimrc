@@ -48,10 +48,12 @@ call vundle#begin()
         Plugin 'derekwyatt/vim-scala'
 
     " Python
-        Plugin 'klen/python-mode'
+        if !exists("g:without_python")
+          Plugin 'klen/python-mode'
 
-        " Overide 'python-mode' autocomplete
-        Plugin 'davidhalter/jedi-vim'
+          " Overide 'python-mode' autocomplete
+          Plugin 'davidhalter/jedi-vim'
+        endif
 
     " Ruby
         Plugin 'ngmy/vim-rubocop'
@@ -101,6 +103,7 @@ call vundle#end()
         let NERDTreeMouseMode=2
         let NERDTreeShowHidden=0
         let NERDTreeKeepTreeInNewTab=1
+        let g:nerdtree_tabs_open_on_console_startup=0
         let g:nerdtree_tabs_open_on_gui_startup=0
         let g:NERDShutUp=1
 
@@ -170,34 +173,36 @@ call vundle#end()
     " }
 
     " python-mode {
-        let g:pymode_rope = 0
+        if !exists("g:without_python")
+          let g:pymode_rope = 0
 
-        " Documentation
-        let g:pymode_doc = 1
-        let g:pymode_doc_key = 'K'
+          " Documentation
+          let g:pymode_doc = 1
+          let g:pymode_doc_key = 'K'
 
-        "Linting
-        let g:pymode_lint = 1
-        let g:pymode_lint_checkers = ["pep8","pyflakes"]
+          "Linting
+          let g:pymode_lint = 1
+          let g:pymode_lint_checkers = ["pep8","pyflakes"]
 
-        " Auto check on save
-        let g:pymode_lint_write = 1
+          " Auto check on save
+          let g:pymode_lint_write = 1
 
-        " Support virtualenv
-        let g:pymode_virtualenv = 0
+          " Support virtualenv
+          let g:pymode_virtualenv = 0
 
-        " Enable breakpoints plugin
-        let g:pymode_breakpoint = 1
-        let g:pymode_breakpoint_bind = '<leader>b'
+          " Enable breakpoints plugin
+          let g:pymode_breakpoint = 1
+          let g:pymode_breakpoint_bind = '<leader>b'
 
-        " syntax highlighting
-        let g:pymode_syntax = 1
-        let g:pymode_syntax_all = 1
-        let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-        let g:pymode_syntax_space_errors = g:pymode_syntax_all
+          " syntax highlighting
+          let g:pymode_syntax = 1
+          let g:pymode_syntax_all = 1
+          let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+          let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
-        " Don't autofold code
-        let g:pymode_folding = 0
+          " Don't autofold code
+          let g:pymode_folding = 0
+        endif
     " }
 
     " PIV {
@@ -206,7 +211,6 @@ call vundle#end()
     " }
 
     " Misc {
-        let g:NERDShutUp=1
         let b:match_ignorecase = 1
     " }
 
@@ -215,12 +219,14 @@ call vundle#end()
         let g:ctrlp_custom_ignore = {
           \ 'dir':  '\v[\/]\.(git|hg|svn)$',
           \ 'file': '\v\.(exe|so|dll)$',
-          \ 'link': 'some_bad_symbolic_links',
           \ }
+
+          "\ 'link': 'some_bad_symbolic_links',
 
         let g:ctrlp_map = '<c-p>'
         let g:ctrlp_cmd = 'CtrlP'
-        let g:ctrlp_working_path_mode = '0'
+        "let g:ctrlp_working_path_mode = '0'
+        let g:ctrlp_working_path_mode = ''
     " }
 " }
 

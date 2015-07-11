@@ -6,8 +6,8 @@
 nm <F1> <nop>
 
 " toggle spell checking
-imap <Leader>s <C-o>:setlocal spell! spelllang=en_gb<CR>
-nmap <Leader>s :setlocal spell! spelllang=en_gb<CR>
+imap <Leader>s <C-o>:setlocal spell! spelllang=en_us<CR>
+nmap <Leader>s :setlocal spell! spelllang=en_us<CR>
 
 " mouse mode
 "nm <C-m> :set mouse=a <CR>
