@@ -84,6 +84,10 @@ call vundle#begin()
     " Golang
         Plugin 'nsf/gocode', {'rtp': 'vim/'}
         Plugin 'fatih/vim-go'
+
+    " VCL
+        Plugin 'smerrill/vcl-vim-plugin'
+
 " }
 call vundle#end()
 

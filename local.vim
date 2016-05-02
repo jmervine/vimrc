@@ -18,3 +18,5 @@ endif
 
 " vim, gvim and macvim configs here.
 let g:without_python = 1
+
+autocmd BufEnter *.md exe 'noremap <F5> :!/usr/bin/chromium-browser %:p<CR>'
