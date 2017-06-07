@@ -16,6 +16,8 @@ call vundle#begin()
             Plugin 'mileszs/ack.vim'
         elseif executable('ack')
             Plugin 'mileszs/ack.vim'
+        elseif executable('ag')
+            Plugin 'rking/ag.vim'
         endif
 
     " General Tools
@@ -24,6 +26,7 @@ call vundle#begin()
         Plugin 'matchit.zip'
         Plugin 'flazz/vim-colorschemes'
         Plugin 'bling/vim-airline'
+        Plugin 'editorconfig/editorconfig-vim'
 
     " General Development
         Plugin 'scrooloose/syntastic'     " Syntax checking / error highlighting.
@@ -66,6 +69,7 @@ call vundle#begin()
     " Javascript / etc.
         Plugin 'kchmck/vim-coffee-script'
         Plugin 'digitaltoad/vim-jade'
+        Plugin 'digitaltoad/vim-pug'
         Plugin 'leshill/vim-json'
         Plugin 'groenewege/vim-less'
         Plugin 'pangloss/vim-javascript'

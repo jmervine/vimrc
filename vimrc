@@ -120,10 +120,6 @@
           set shell=bash
           set guioptions-=T
 
-          if has("gui_gtk2")
-              set guifont=Andale\ Mono\ Regular\ 11,Menlo\ Regular\ 10,Consolas\ Regular\ 11,Courier\ New\ Regular\ 13
-          endif
-
           " Sets height to be higher then max window with, will auto adjust
           set lines=100
           set columns=200
@@ -149,6 +145,7 @@
           else
             " gvim only configs here
 
+            set guifont=Monospace\ 11
           endif
 
         endif
@@ -171,6 +168,8 @@
             " See functions.vim for Striptrailingwhitespace definition.
             autocmd BufWritePre * call StripTrailingWhitespace()
             autocmd FileType jade let b:noStripWhitespace=1
+            autocmd FileType pug let b:noStripWhitespace=1
+            autocmd FileType vim let b:noStripWhitespace=1
         " }
     " }
 

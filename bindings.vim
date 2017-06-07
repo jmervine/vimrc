@@ -72,6 +72,9 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
+" Ag
+map <leader>a :Ag 
+
 " TODO: Review spf13 copy {
 
     " Stupid shift key fixes
