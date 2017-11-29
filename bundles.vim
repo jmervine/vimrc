@@ -92,6 +92,9 @@ call vundle#begin()
     " VCL
         Plugin 'smerrill/vcl-vim-plugin'
 
+    " Terraform
+        Plugin 'hashivim/vim-terraform'
+
 " }
 call vundle#end()
 
@@ -235,6 +238,11 @@ call vundle#end()
         let g:ctrlp_cmd = 'CtrlP'
         "let g:ctrlp_working_path_mode = '0'
         let g:ctrlp_working_path_mode = ''
+    " }
+
+    " Terraform {
+      let g:terraform_align=1
+
     " }
 " }
 

@@ -75,6 +75,10 @@ map <leader>et :tabe %%
 " Ag
 map <leader>a :Ag 
 
+" globbed file opening
+nmap <leader>g :e **/
+cmap <leader>g **/
+
 " TODO: Review spf13 copy {
 
     " Stupid shift key fixes
