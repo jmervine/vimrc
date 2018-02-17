@@ -95,6 +95,9 @@ call vundle#begin()
     " syslog
         Plugin 'syslog-syntax-file'
 
+    " nginx
+        Plugin 'nginx.vim'
+
 " }
 call vundle#end()
 
