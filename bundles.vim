@@ -63,9 +63,6 @@ call vundle#begin()
         Plugin 'sunaku/vim-ruby-minitest'
         Plugin 'tpope/vim-haml'
 
-    " Nginx
-        Plugin 'evanmiller/nginx-vim-syntax'
-
     " Javascript / etc.
         Plugin 'kchmck/vim-coffee-script'
         Plugin 'digitaltoad/vim-jade'
@@ -94,6 +91,9 @@ call vundle#begin()
 
     " Terraform
         Plugin 'hashivim/vim-terraform'
+
+    " syslog
+        Plugin 'syslog-syntax-file'
 
 " }
 call vundle#end()
