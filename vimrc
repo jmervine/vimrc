@@ -66,7 +66,9 @@
             " color scheme
             " see: http://vimcolorschemetest.googlecode.com/svn/html/index-java.html
             if has('gui_running')
-                colorscheme forneus
+                "colorscheme solarized
+                "colorscheme atom
+                colorscheme 1989
             else
                 colorscheme default
             endif
@@ -137,7 +139,7 @@
             " macvim only configs here
             set clipboard=unnamed
             set transparency=0
-            set guifont=Menlo\ Regular:h14
+            set guifont=Menlo\ Regular:h15
 
             " vim-gist
             let g:gist_clip_command = 'pbcopy'
@@ -183,9 +185,9 @@
     set nobackup
 
     " Make arrow and other keys work
-    if !has('gui')
-        set term=$TERM
-    endif
+    " if !has('gui')
+    "     set term=$TERM
+    " endif
 
     scriptencoding utf-8
 
