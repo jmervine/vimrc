@@ -3,6 +3,7 @@ install:
 	make $(HOME)/.vimrc
 	make bundle/Vundle.vim
 	make PluginInstall
+	make GoInstallBinaries
 
 uninstall:
 	rm -f $(HOME)/.vimrc
@@ -24,6 +25,9 @@ bundle/Vundle.vim:
 PluginInstall:
 	-go get -u github.com/nsf/gocode
 	vim +PluginClean\! +PluginInstall +qall
+
+GoInstallBinaries:
+	vim +GoInstallBinaries\! +qall
 
 clean:
 	mv -f $(HOME)/.vimrc $(HOME)/.vimrc.backup
