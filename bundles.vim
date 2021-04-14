@@ -47,6 +47,9 @@ call vundle#begin()
     " Ansible
         Plugin 'chase/vim-ansible-yaml'
 
+    " Salt
+        Plugin 'saltstack/salt-vim'
+
     " Scala
         Plugin 'derekwyatt/vim-scala'
 
