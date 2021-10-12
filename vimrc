@@ -173,6 +173,7 @@
             autocmd FileType pug let b:noStripWhitespace=1
             autocmd FileType vim let b:noStripWhitespace=1
             autocmd FileType yaml let b:noStripWhitespace=1
+            autocmd FileType sls let b:noStripWhitespace=1
         " }
     " }
 

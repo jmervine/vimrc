@@ -35,3 +35,6 @@ clean:
 
 docker:
 	docker build -t 'jmervine/vimrc' .
+
+.PHONY: PluginInstall GoInstallBinaries \
+		clean docker install uninstall update

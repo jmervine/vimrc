@@ -161,6 +161,7 @@ call vundle#end()
         let g:gist_show_privates = 1
         let g:gist_detect_filetype = 1
         let g:gist_get_multiplefile = 1
+        let g:github_user = "jmervine"
     " }
 
     " JSON {
@@ -249,7 +250,7 @@ call vundle#end()
     " Terraform {
       let g:terraform_align=1
     " }
-    
+
     " Go {
       let g:go_fmt_command = "goimports"
       let g:go_highlight_types = 1
