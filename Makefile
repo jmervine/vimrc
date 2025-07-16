@@ -23,7 +23,7 @@ bundle/Vundle.vim:
 	git clone https://github.com/gmarik/Vundle.vim.git bundle/Vundle.vim
 
 PluginInstall:
-	-go get -u github.com/nsf/gocode
+	-go install github.com/nsf/gocode@latest
 	vim +PluginClean\! +PluginInstall +qall
 
 GoInstallBinaries:
